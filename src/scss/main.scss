@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px; //  1 rem
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #e5e5e5;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.frontSide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+}
+.frontSideTicket,
+.backSideTicket {
+  width: 1143px;
+  height: 480px;
+  background-color: #509fcb;
+  background: #51a0cc url("../img/oblaco_1.png");
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  & span:nth-child(1) {
+    background-color: #e5e5e5;
+    width: 10px;
+    height: 45px;
+    left: 0;
+    position: absolute;
+  }
+  & span:nth-child(3) {
+    background-color: #e5e5e5;
+    width: 10px;
+    height: 45px;
+    right: 0;
+    position: absolute;
+  }
+}
+.frontSide-Logo {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+}
+.leftLetter {
+  width: 100%;
+  & div:nth-child(1) {
+    width: 55px;
+    height: 20px;
+    background-color: #fff;
+    clip-path: polygon(0 100%, 10% 0, 100% 0, 100% 100%);
+  }
+  & div:nth-child(2) {
+    width: 76px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(-56deg) translate(-20px, -2px);
+    clip-path: polygon(0 100%, 10% 0, 100% 0, 100% 100%);
+  }
+  & div:nth-child(3) {
+    width: 55px;
+    height: 22px;
+    background-color: #fff;
+    transform: translate(0px, 25px);
+  }
+}
+.pseudo_Img {
+  display: flex;
+  height: 70%;
+}
+.rightLetter {
+  width: 100%;
+  transform: translate(-10px, 0px);
+  & div:nth-child(1) {
+    height: 66px;
+    width: 22px;
+    background-color: #fff;
+    transform: translate(0px, -10px);
+  }
+  & div:nth-child(2) {
+    height: 60px;
+    width: 22px;
+    background-color: #fff;
+    transform: rotate(90deg) translate(-20px, -20px);
+    clip-path: polygon(0 100%, 0 15%, 100% 0, 100% 100%);
+  }
+}
+
+.abbreveatin {
+  p {
+    font-size: 1.44rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+.backSide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainTicket {
+  width: 100%;
+  height: 100%;
+  // background: red;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.leftSideTicket {
+  width: 73%;
+  height: 100%;
+  background-color: #fff;
+  border-right: 2px dashed #509fcb;
+}
+
+.leftSideTicket {
+  display: flex;
+}
+.leftSideText {
+  height: 100%;
+  width: 8%;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & p {
+    transform: rotate(180deg) translate(10px, 20px);
+    font-size: 0.75rem;
+    writing-mode: tb;
+    line-height: 35px;
+    padding-bottom: 50px;
+  }
+}
+
+.boarding_pass-left {
+  width: 31%;
+  height: 100%;
+  padding-top: 15px;
+  background-color: transparent;
+  // border-left: 1px solid red;
+  // border-right: 1px solid red;
+}
+.boarding_pass-left_text p {
+  font-family: " Myriad Pro";
+  font-size: 0.75rem;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.issued_and_logo {
+  height: 37px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.issued {
+  width: 43px;
+
+  & p {
+    font-size: 0.5rem;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: unset;
+    font-weight: 600;
+    font-family: " Myriad Pro";
+  }
+}
+
+.issued_logo {
+  margin-left: 10px;
+  width: 148px;
+  height: 100%;
+  background-color: #509fcb;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+
+  & .pseudo_Img {
+    transform: scale(0.3);
+    height: 37px;
+    float: left;
+    transform: scale(0.25) translate(-120px, -20px);
+  }
+  & .abbreveatin {
+    transform: translate(-70px, 1px) scale(0.75);
+  }
+}
+
+.passInfo {
+  padding-top: 40px;
+}
+.name_descr p {
+  font-size: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.passage_name {
+  padding-top: 10px;
+  & p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: 1px;
+    white-space: unset;
+    text-transform: uppercase;
+  }
+}
+
+.barcode_and_gate {
+  padding-top: 50px;
+  display: flex;
+}
+.gate {
+  width: 177px;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+.gateInfo {
+  & :nth-child(1) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  & :nth-child(2) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46.3448px;
+    line-height: 54px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  & :nth-child(3) {
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  & :nth-child(4) {
+    font-size: 14px;
+    line-height: 110%;
+    white-space: unset;
+    align-items: center;
+    line-height: 10px;
+    & strong {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: unset;
+    }
+  }
+}
+
+.boarding_pass-right {
+  height: 100%-10%;
+  width: 100%-31%-10%-3%-3%;
+  padding-top: 10%;
+  padding-left: 3%;
+  border-right: 3%;
+  // border-left: 1px solid red;
+  // border-right: 1px solid red;
+}
+
+.date_issue_and_iso {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iso_text,
+.time_text-up,
+.pnr_text-up {
+  text-align: right;
+}
+
+.flight_text-under p,
+.month p {
+  width: 110px;
+}
+.date_issue-text-up p,
+.iso_text-up p,
+.id_text-up p,
+.place_text-up p,
+.flight_text-up p,
+.class_text-up p,
+.time_text-up p,
+.pnr_text-up p,
+.from_descr p,
+.flight_descr p,
+.date_descr p,
+.time_descr p {
+  font-size: 6px;
+  line-height: 8px;
+  text-transform: uppercase;
+}
+
+.date_issue-text-under p,
+.iso_text-under p,
+.id_text-under p,
+.place_text-under p,
+.flight_text-under p,
+.class_text-under p,
+.time_text-under p,
+.pnr_text-under p,
+.from_name p,
+.flight_name p,
+.date_name,
+.time_name p,
+.under_text_name p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.id_and_place-wrap {
+  padding-top: 12px;
+}
+.id_and_place {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.place_text {
+  text-align: right;
+}
+.fligth_and_class_and_time-wrap {
+  padding-top: 11px;
+}
+.fligth_and_class_and_time {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.time_text-under-wrap {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.boadrdTime_and_numTick-wrap {
+  padding-top: 50px+33px;
+}
+.boadrdTime_and_numTick {
+  display: flex;
+  justify-content: space-between;
+}
+.boadring_and_pnr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.boarding_info p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.boadrdTime {
+  width: 225px;
+  & p:nth-child(1) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46.3448px;
+    line-height: 54px;
+    padding-top: 5px;
+    text-transform: uppercase;
+  }
+  & p:nth-child(2) {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    text-transform: uppercase;
+  }
+  & p:nth-child(3) {
+    font-size: 14px;
+    white-space: unset;
+    padding-top: 10px;
+    align-items: center;
+    line-height: 18px;
+  }
+}
+
+.numTick {
+  display: flex;
+  align-items: flex-end;
+  & p {
+    width: 171px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    & strong {
+      font-size: 20px;
+    }
+  }
+}
+.rightSideTicket-wrap {
+  width: 27%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #509fcb url("../img/oblaco_2.png") no-repeat;
+  background-position: -70px;
+  box-shadow: 4px 0 120px 1px #509fcb;
+}
+
+.rightSideTicket {
+  width: 97%;
+  padding-top: 15px;
+}
+.boarding_logo_and_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boarding_logo {
+  & .issued_logo {
+    background: linear-gradient(0deg, #448bb1, #448bb1);
+  }
+}
+.boarding_text p {
+  font-size: 11px;
+  padding-right: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-family: " Myriad Pro";
+}
+.rightSideTicket_passager_info {
+  padding-top: 30px;
+  padding-left: 10px;
+  & .passage_name {
+    padding-top: 4px;
+  }
+}
+
+.rightSideTicket_from_info {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.from_name {
+  width: 228px;
+  & p:nth-child(2) {
+    margin-left: -25px;
+  }
+  & p:nth-child(3) {
+    margin-left: -15px;
+  }
+}
+.rightSideTicket_under-wrap {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.rightSideTicket_under {
+  width: 84%;
+}
+
+.flight_date_time,
+.gate_board_seat {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.rightSideTicket_under_text-wrap {
+  display: flex;
+  height: 15%;
+  justify-content: center;
+  align-items: flex-end;
+  & .rightSideTicket_under_text {
+    width: 84%;
+  }
+}
+
+.under_text_name {
+  width: 180px;
+}

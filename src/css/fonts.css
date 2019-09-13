@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  /* font-family: "Myriad Pro Regular"; */
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
