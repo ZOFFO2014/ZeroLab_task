@@ -323,7 +323,7 @@ p {
   justify-content: space-between; }
 
 .boadrdTime_and_numTick-wrap {
-  padding-top: 83px; }
+  padding-top: 77px; }
 
 .boadrdTime_and_numTick {
   display: flex;
@@ -425,7 +425,7 @@ p {
     margin-left: -15px; }
 
 .rightSideTicket_under-wrap {
-  padding-top: 50px;
+  padding-top: 45px;
   display: flex;
   justify-content: center; }
 
